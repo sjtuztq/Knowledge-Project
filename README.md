@@ -1,5 +1,5 @@
 # Knowledge Project
-
+![](https://img.shields.io/badge/status-happy_new_year!-orange.svg?style=flat-square)
 ## Motivation of this project
 This project is motivated by Evernote and Confluence
 
