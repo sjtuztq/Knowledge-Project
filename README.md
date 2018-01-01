@@ -2,13 +2,19 @@
 
 ## Motivation of this project
 This project is motivated by Evernote and Confluence
+
 The basic requirement is:
-    - good looking
-    - support hierarchical page structure
-    - support markdown
-    - support content search
+- good looking
+- support hierarchical page structure
+- support markdown
+- support content search
+
 Some more requirement:
-    - Good looking
+- Good looking
+
+## How to utilize full power of this project
+1. Organize every file properly
+2. Use [`ack`](https://beyondgrep.com) to search
 
 ## Getting started
 
@@ -31,7 +37,12 @@ Some more requirement:
 1. `open http://localhost:8000` to open the site in your favorite browser
 
 
-## Existing source
+## Further development
+ - [Gatsby guide](https://www.gatsbyjs.org/blog/2017-07-19-creating-a-blog-with-gatsby/)
+ - Even more gatsby blogs:
+    - https://blog.dustinschau.com
+
+## Existing source for project pages
 This repo is forked from [reactjs.org](https://github.com/reactjs/reactjs.org), which is a really cool website created by facebook. For any maintaining doubt about maintaining or modifying this website, please refer to [origin reactjs.org project README](https://github.com/reactjs/reactjs.org)
 
 Some other projects using github page can be found [here](https://github.com/collections/github-pages-examples)
@@ -45,6 +56,3 @@ Some other projects using github page can be found [here](https://github.com/col
 | [**Facebook:react**](https://github.com/facebook/react)| :octocat:        | :octocat:    | Nice structure, not like the color and font|
 
 
-## How to utilize full power of this project
-1. Organize every file properly
-2. Use [`awk`](https://beyondgrep.com) to search
