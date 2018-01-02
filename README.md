@@ -18,6 +18,8 @@ Some more requirement:
 ## Complete Workflow of this Project
 ### 1. Writing
 Just create whatever folder/file you need. Text content should be in `.md` format
+
+For reference of markdown syntax, visit [Github Guides: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 ### 2. Viewing contents locally
 With `grip`, you can preview the exact Github rendered markdown result locally
 
