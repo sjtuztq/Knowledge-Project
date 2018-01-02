@@ -30,9 +30,9 @@ pip install --user grip
 grip foo.md
 ```
 
-For further infomation, please refer to [`grip`](https://github.com/joeyespo/grip) project page
+For further information, please visit [`grip`](https://github.com/joeyespo/grip) project page
 ### 3. Search contents
-Use `ack` to search for interested content. For more infomation, consult [`ack`](https://beyondgrep.com) project page
+Use `ack` to search for interested content. For more information, please visit [`ack`](https://beyondgrep.com) project page
 
 ### 4. Push to github
 View my knowledge everywhere
