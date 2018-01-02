@@ -32,6 +32,8 @@ pip install --user grip
 grip foo.md
 ```
 
+Due to restriction of Github API usage, you need to set up grip password before using grip. For details refer to [this issue](https://github.com/joeyespo/grip/issues/35)
+
 For further information, please visit [`grip`](https://github.com/joeyespo/grip) project page
 ### 3. Search contents
 Use `ack` to search for interested content. For more information, please visit [`ack`](https://beyondgrep.com) project page
