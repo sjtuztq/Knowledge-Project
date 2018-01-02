@@ -20,7 +20,7 @@ python2 -m virtualenv $your_env_name
 
 ### Conda virtualenv
 I have ran into cases when normal virtualenv doesn't work. Then I found this solution, which also looks neat.
-Creating virtualenv with conda is a little different. A full guide can be found [here](http://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
+Creating virtualenv with conda is a little different. A full guide can be found [Create virtual environments for python with conda](http://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
 ```bash
 # create venv, under miniconda2/envs/$env_name
 conda create -n $env_name 
@@ -30,3 +30,5 @@ source miniconda2/bin/activate $env_name
 source deactivate
 ```
 This looks neat because it keeps all venv in one place under miniconda directory. You can put the activation command into a script and **SOURCE** it (if you execute it, the environment prompt will not appear)
+
+However, virtualenv created in this way does not support pip package management(No tuna mirror!). It is a pain in the ass to install packages. Consult [Create virtual environments for python with conda #6](http://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/) 
