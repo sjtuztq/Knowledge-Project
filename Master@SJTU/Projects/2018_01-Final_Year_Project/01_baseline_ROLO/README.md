@@ -2,7 +2,8 @@
 
 ## TODO:
  - [x] virtualenv: `py2-tensorflow-gpu-1.0`
- - [x] convert script
+ - [x] convert script on new branch
+ - [x] merge master
  - [ ] run the experiment
  - [ ] align experiment results
 
