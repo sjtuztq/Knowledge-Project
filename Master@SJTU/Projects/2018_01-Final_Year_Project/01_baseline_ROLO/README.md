@@ -13,9 +13,10 @@
 [Paper on Arxiv](https://arxiv.org/pdf/1607.05781.pdf)
 
 
-## Reimplement
+## Reimplement Detail
 ### Code and data
 code: `ssh://tianling@AISIG01:/home/tianling/Projects/ROLO`
+
 data: `ssh://tianling@AISIG01:/slwork/tianling/data/2018_01_ROLO/OTB30`
 
 ### Migrating to Tensorflow 1.0
@@ -26,3 +27,5 @@ The project is written in python2
 #### TODO:
  - [x] virtualenv: `py2-tensorflow-gpu-1.0`
  - [x] convert script
+
+## Experiment Result
