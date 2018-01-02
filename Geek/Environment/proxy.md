@@ -36,3 +36,16 @@ This only works if config files are under `/etc/shadowsocks/`. To start shadowso
 ```bash
 $ sudo start shadowsocks-libev@foo.service
 ```
+
+### Use SS in command line
+#### curl
+curl supports socks5 proxy quite well. There're 2 ways for using curl with ss:
+1. Env variable
+```bash
+export https_proxy=socks5://localhost:1086
+curl $some_url >> $local_file
+```
+2. curl param
+```bash
+curl --socks5-hostname socks5://localhost:1086 $url >> $local_file
+```
