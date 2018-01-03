@@ -44,6 +44,9 @@ Project_Root (No code)
 └── README.md(copy from KP)
 ```
 
+### Coding style
+Python: [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#Naming)
+
 ### File management
 Use `YAML` files for configurations
 
