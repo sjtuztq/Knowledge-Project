@@ -46,7 +46,7 @@ Use `YAML` files for configurations
 Use `JSON` files for data
 
 ## Project list
- - [2018_01-Final_Year_Project](2018_01-Final_Year_Project/README.md)
+ - [2018_01-Final_Year_Project](2018_01-Final_Year_Project)
 
 
 
