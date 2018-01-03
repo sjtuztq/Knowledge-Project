@@ -1,27 +1,16 @@
-# Setting up Torque/PBS job scheduler on Linux server
+# Setting up job scheduler on Linux server
+## Use slurm
+For Installation details, view [Arch wiki: Slurm](https://wiki.archlinux.org/index.php/Slurm) and [Installing slurm on Ubuntu](https://www.invik.xyz/work/Slurm-on-Ubuntu-Trusty/)
 
-## Arch Linux
-Consult [Arch wiki: torque](https://wiki.archlinux.org/index.php/TORQUE) for more infomation.
+For configuration, view [Slurm documentation: Admin quick start](https://slurm.schedmd.com/quickstart_admin.html) and [Web based config tool](https://slurm.schedmd.com/configurator.html)
 
+For tutorial, view [Slurm and Moab Tutorial](https://computing.llnl.gov/tutorials/moab/)
 
-## Ubuntu
-### Software installation
-```bash
-$ sudo apt-get install torque-server torque-client torque-mom torque-pam
-```
+## **Below is DEPRECATED** 
+### Torque
 
-### Configuration
+**IMPORTANT**: This article is an ad-hoc way for setting up torque on **one node only**
 
-Installation will set up torque with a default setup that helps in no way, you will have to stop the services and recreate a clean setup.
-```bash
-$ /etc/init.d/torque-mom stop
-$ /etc/init.d/torque-scheduler stop
-$ /etc/init.d/torque-server stop
-```
+For infomation about configuring torque for multiple nodes, consult [Arch wiki: torque](https://wiki.archlinux.org/index.php/TORQUE)
 
-Then, create a new database with:
-```
-$ pbs_server -t create
-```
-
-
+For more details, refer to [Install torque on ubuntu](https://jabriffa.wordpress.com/2015/02/11/installing-torquepbs-job-scheduler-on-ubuntu-14-04-lts/)
