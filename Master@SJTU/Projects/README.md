@@ -1,7 +1,10 @@
 # Projects One Page
 ## Contents
- - [Project specifications](#project-specifications)
  - [Project list](#project-specifications)
+ - [Project specifications](#project-specifications)
+
+## Project list
+ - [2018_01-Final_Year_Project](2018_01-Final_Year_Project)
 
 ## Project specifications
 ### Definition
@@ -43,10 +46,8 @@ Project_Root (No code)
 
 ### File management
 Use `YAML` files for configurations
-Use `JSON` files for data
 
-## Project list
- - [2018_01-Final_Year_Project](2018_01-Final_Year_Project)
+Use `JSON` files for data
 
 
 
