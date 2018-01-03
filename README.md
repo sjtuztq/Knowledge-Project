@@ -20,6 +20,8 @@ Some more requirement:
 Just create whatever folder/file you need. Text content should be in `.md` format
 
 For reference of markdown syntax, visit [Github Guides: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+For even more info syntax about markdown, visit [John Gruber home page](https://daringfireball.net/projects/markdown/syntax#backslash "Inventor of Markdown")
 ### 2. Viewing contents locally
 With `grip`, you can preview the exact Github rendered markdown result locally
 

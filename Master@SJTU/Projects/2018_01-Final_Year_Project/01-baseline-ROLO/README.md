@@ -5,18 +5,19 @@
  - [x] convert script on new branch
  - [x] merge master
  - [ ] run the experiment
-    - [ ] qsub on AISIG01?
+    - [ ] :boom: qsub on AISIG01?
+    - [ ]
  - [ ] align experiment results
 
 ## Contents
-- [Related work & code](#related-work-and-code)
+- [Related work & code](#related-work--code)
 - [Reimplement Detail](#reimplement-detail)
-    - [Code and data](#code-and-data)
-    - [Migrating to Tensorflow 1.0](#migrating-to-tensorflow-1.0)
+    - [Code & data](#code--data)
+    - [Migrating to Tensorflow 1.0](#migrating-to-tensorflow-10)
 - [Experiment Result](#experiment-result)
 
 
-## Related work and code
+## Related work & code
 
 [Project page](http://guanghan.info/projects/ROLO/)
 
@@ -26,7 +27,7 @@
 
 
 ## Reimplement Detail
-### Code and data
+### Code & data
 code: `ssh://tianling@AISIG01:/home/tianling/Projects/ROLO`
 
 data: `ssh://tianling@AISIG01:/slwork/tianling/data/2018_01_ROLO/OTB30`
@@ -37,3 +38,4 @@ The original project code was written with Tensorflow 0.11.0, which I think is t
 
 
 ## Experiment Result
+
