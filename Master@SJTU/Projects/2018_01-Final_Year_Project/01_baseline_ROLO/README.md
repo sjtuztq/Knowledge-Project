@@ -5,6 +5,7 @@
  - [x] convert script on new branch
  - [x] merge master
  - [ ] run the experiment
+    - [ ] qsub on AISIG01?
  - [ ] align experiment results
 
 ## Contents
