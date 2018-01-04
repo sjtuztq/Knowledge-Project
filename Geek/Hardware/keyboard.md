@@ -20,3 +20,12 @@
  - Some known issues
     - `Command + Esc` doesn't scroll through full screen\
       Solution: maximize screen but not make them full screen
+
+## Software related shortcuts
+ - context3
+    - `Control + Space` for launching context3
+    - `Command + Tab` switch between all
+    - `Command + Esc` switch between active app
+ - Spotlight
+    - `Command + Space` to launch spotlight
+    - Type whatever text, then hit `Command + B` to search google
