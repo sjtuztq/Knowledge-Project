@@ -40,6 +40,7 @@ However, virtualenv created in this way does not support pip package management(
 | virtualenv | `pip install virtualenv` | `pip install venv`|
 | ipython | `pip install ipython==5.1.0` | `pip install ipython` |
 | tensorflow | [Tuna mirror][] | [Tuna mirror][] |
+| opencv | `pip install opencv-python` |`pip install opencv-python` | 
 
 [Tuna mirror]: https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/
 
