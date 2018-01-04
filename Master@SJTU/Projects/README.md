@@ -28,7 +28,7 @@ Project naming should be consistent. For now, project naming rules are:
 #### In knowledge project
 Only markdown files should be included. Under each project/subproject folder, a `README.md` must exist as a `project one page`
 
-Also, there should be a folder named `Weekly_Trac`
+Also, there should be a folder named `Weekly_Trac`, TODO lists must only be included in the weekly trac files.
 #### In real server/PC
 A project exist in server/PC as a git repo. Directories should be organized in such way:
 ```

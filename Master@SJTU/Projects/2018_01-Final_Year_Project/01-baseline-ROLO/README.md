@@ -1,14 +1,5 @@
 # Reimplement baseline ROLO
 
-## TODO:
- - [ ] :boom: migrate to tf 1.0.0
-     - [x] virtualenv: `py2-tensorflow-gpu-1.0`
-     - [x] convert script on new branch
-     - [x] merge master
-     - [ ] run the experiment
-        - [ ] :boom: qsub on AISIG01?
-        - [ ] 1st successful run
- - [ ] align experiment results
 
 ## Contents
 - [Related work & code](#related-work--code)
@@ -43,6 +34,5 @@ The original project code was written with Tensorflow 0.11.0, which I think is t
 ```bash
 python -m experiments.training.ROLO_step6_train_20_exp1
 ```
-    
 
 ## Experiment Result
