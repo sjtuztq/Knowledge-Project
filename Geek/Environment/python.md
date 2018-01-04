@@ -18,6 +18,16 @@ python3 -m venv $your_env_name
 python2 -m virtualenv $your_env_name
 ```
 
+#### Install ipython in virtualenv
+##### Python2.7
+Better **NOT** install **latest** ipython for python2.7, IPython 6.0+ does not support Python 2.6, 2.7, 3.0, 3.1, or 3.2
+```bash
+pip install ipython==5.1.0
+```
+##### Python3.4+
+`pip install ipython` will be enough
+
+
 ### Conda virtualenv
 I have ran into cases when normal virtualenv doesn't work. Then I found this solution, which also looks neat.
 Creating virtualenv with conda is a little different. A full guide can be found [Create virtual environments for python with conda](http://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
