@@ -18,15 +18,6 @@ python3 -m venv $your_env_name
 python2 -m virtualenv $your_env_name
 ```
 
-#### Install ipython in virtualenv
-##### Python2.7
-Better **NOT** install **latest** ipython for python2.7, IPython 6.0+ does not support Python 2.6, 2.7, 3.0, 3.1, or 3.2
-```bash
-pip install ipython==5.1.0
-```
-##### Python3.4+
-`pip install ipython` will be enough
-
 
 ### Conda virtualenv
 I have ran into cases when normal virtualenv doesn't work. Then I found this solution, which also looks neat.
@@ -42,3 +33,13 @@ source deactivate
 This looks neat because it keeps all venv in one place under miniconda directory. You can put the activation command into a script and **SOURCE** it (if you execute it, the environment prompt will not appear)
 
 However, virtualenv created in this way does not support pip package management(No tuna mirror!). It is a pain in the ass to install packages. Consult [Create virtual environments for python with conda #6](http://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/) 
+
+## Packagewise issue
+| Package name | python2.7 | python3 |
+| ------------ | --------- | ------- |
+| virtualenv | `pip install virtualenv` | `pip install venv`|
+| ipython | `pip install ipython==5.1.0` | `pip install ipython` |
+| tensorflow | [Tuna mirror][] | [Tuna mirror][] |
+
+[Tuna mirror]: https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/
+
