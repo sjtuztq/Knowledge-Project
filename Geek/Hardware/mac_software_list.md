@@ -3,7 +3,7 @@
 - Papers vs Mendeley: Manage papers
 
 ## Geek 
-- Dash
+- Dash(essential, crack license)
 - iTerm2
 - Xquartz
 - MacVim
@@ -13,7 +13,12 @@
 - XMind: Creates mind map
 
 ## System utils
-- istat meuns
+- istat menus(essential, bought)\
+system monitor
+- contexts3(essential, bought)\
+window switcher, a good one
+- alfred(essential)\
+  replacement for spotlight, remember to check fuzzy search for application
 - bartender
 - daisy disk
 
