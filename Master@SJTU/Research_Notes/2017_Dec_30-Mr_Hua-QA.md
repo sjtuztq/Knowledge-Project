@@ -1,7 +1,7 @@
 # QA with Mr Hua about _How to do paper reading_ PPT
  - Reading paper
     - What are in demos:
-      > Mr. Hua will send me a copy (remember to follow up)
+      > Mr. Hua will send me [a copy](2017_Dec_30-Mr_Hua-Paper_Reading_Demo.md)
  - Writing paper
      - What is proposal
        > 1. what is your idea
@@ -18,3 +18,4 @@
        >    - Onedrive, Google Drive
        > 2. **Principle** for building your knowledge base:
        >    - **Keep everything in one place**
+
