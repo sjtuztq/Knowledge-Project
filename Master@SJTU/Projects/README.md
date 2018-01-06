@@ -52,8 +52,16 @@ Python: [Google Python Style Guide](https://google.github.io/styleguide/pyguide.
 
 ### File management
 Use `YAML` files for configurations
-
 Use `JSON` files for data
 
-
+### Paper Reading
+#### Annotation
+| Color | Meaning |
+| ---   | ---     |
+| Yellow | Question Definition Related|
+| Blue   | Related work        |
+| Green  | Method description  |
+| Red    | Contribution        |
+| Pink   | Experiment result   |
+| Orange | Questions           |
 
