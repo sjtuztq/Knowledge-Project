@@ -1,8 +1,15 @@
 # Notes: Spatially Supervised RCNN for Visual Object Tracking
-![](https://img.shields.io/badge/status-Under_construction-orange.svg?style=flat-square)
+![](https://img.shields.io/badge/citation-26-green.svg?style=flat-square)
+![](https://img.shields.io/badge/keyword-Visual_Object_Tracking-green.svg?style=flat-square)
 
-## Paper infomation
-Citation 26
+![](https://img.shields.io/badge/Author_citation-40-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/Author-Guanghan_Ning:Ph.D.Candidate-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/Univ-University_of_Missouri_Columbia-blue.svg?style=flat-square)
+
+##  Resource
+Project page with source code available [[1]]
+
+Source code available on github page [[2]]
 
 ## Problem addressed / Motivation
  - Visual tracking : 
@@ -56,62 +63,83 @@ How to **extend DNN analysis to the spacio-temporal** domain for object tracking
 
 
 ## Implementation
-## Formulation / Solver / Implementation
-- TODO
-- Utilize VGG16 model for convolutional layers (conv1 and conv5) in FCN.
-- Follow faster rcnn for the pedestrian proposal network
-- From pedestrian proposals, we apply three fully connection layers (fc6-8) to generate final feature for person re-id
+### System overview
+- YOLO: Object detection
+    - `Assignment cost matrix`: IOU between current detection and short-term history of validated detections
+    - First frame is determined by IOU between detections and GT
+    - Threshold for minimum IOU
+
+- E2E pipeline
+    - CNN
+        - Input: video frame
+        - Output: 4096 dim feature vector
+    - YOLO
+        - Input: 4096 dim feature vector
+        - Output: S * S * (B * 5 + C)
+        - B<sub>t</sub> = (0, x, y, w, h, 0), since no classification is needed
+    - LSTM-RNN
+        - Input: 4096 dim feature vector + B<sub>t,i</sub> + S<sub>t-1</sub>
+        - Loss: MSE loss for B
+        - Optimizer: Adam
+    - (Alternative) Heat map
+        - Convert ROLO location to 32x32 bitmap
+        - Loss: MSE
 
 ## Useful info / tips
-- TODO
-- If the softmax target is very sparse and the minibatch contains only a few label classes, the gradients would be biased on these classes at each SGD iteration
-- It is observed that detectors greatly affect the person search performance of baseline method and there is still a big gap between using the ground truth bounding boxes and the automatically detected ones.
+ - It seems that history would be useful in supervising LSTM to restrict prediction to a specific range
 
-# Evaluation
-## Dataset
-- TODO
-- Own dataset (E2E Person Search)
-- There are two parts in the dataset: street snaps and movies.
-- Low-resolution subset and occlusion subset
+## Experiments
+### Dataset
+ - Benchmark:`OTB` dataset from paper _Object tracking benchmark_ (same author)
+ - OTB30: 30 videos from the benchmark
+ - YOLO training: pretrain on `ImageNet` and finetune on `VOC`
+### Qualitative results
+ - Tracking is generalized to unseen objects (trivial)
+ - LSTM can interpret the visual features
+ - LSTM is capable of regressing `visual features` + `location history` to `regiion inference`
+ - Able to handle occlusion
+### Quantitative results
+ - Evaluation: `Temporal Robustness Evaluation` ,`Spacial Robustness Evaluation`, and `Average Overlap Scores`
+ - Baseline: CNN-SVM
+ - Training on 22 videos in OTB30 testing on 8 videos in OTB30
+ - Training on 1/3 frames in OTB30 testing on whole sequence
+ - Training with 1/3 gt and all sequence frames (How?)
 
-## Metrics
-- TODO
-- designed different evaluation protocols by setting the gallery size to 50, 100, 500, 1, 000, 2, 000, and 4, 000
-- meanAveraged Precision (mAP): A candidate window is considered as positive if its overlap with the ground truth is larger than 0.5
-- top-k matching rate on bounding boxes: A matching is counted if a bounding box among the top-k predicted boxes overlaps with the ground truth larger than the threshold
-
-## Results
-- TODO
-- Baseline detector: ACF + Deep detector
-- Baseline re-id methods: BoW with cosine distance, DenseSift+ColorHist with Euclidean and KISSME distance metric, IDNet
-
-# Resource
-## Project page
-- TODO
-http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html
-
-## Source code
-- TODO
-https://github.com/ShuangLI59/person_search
-
-## Dataset
-- TODO
-Need to send request
-https://drive.google.com/open?id=0B-GOvBat1maOVUE3WmNNUVRGamc
 
 ## Other paper reading notes
 
-## Others
+## Questions
+- What does `dynamics` mean in 4.3
+- What does `an online appearance model` mean in section 3.4 and 4.1
+    - My answer:
+        - Online: it uses location history and keeps updating
+        - Appearance model: it predicts the location(appearance) of the target
+- (YOLO) What happens if multiple known classses are in the same video?
+    - output the most confident one?
+- How does YOLO distinguish between 2 people if it's only trained to understand the features of generic human? Why in Figure 6 (section 4.2) it tracks only one person? 
+- How to track designated target?
+- How does YOLO predict for the first frame, if no GT is provided?
+- How to, if possible, quickly extend the network(YOLO part) to detect new class?
+- Details about heatmap
 
-# Questions
-- TODO
-- How to perform re-id algorithm in current framework?
 
 # Build upon
-- TODO
-- Performance is low on low-resolution images
-- Extend to video data (plus tracking)
+- Track arbitrary object that is annotated?
+- Use semantic segmentation instead of YOLO? (occlusion)
+- Dramatic drop in blury cases (`OAB`, `CNN-SVM`, `STR UCK` are much better) performance is poor (refer to paper table1)
+- Tracking multiple instances / classes ?
 
 # Paper connections
+- YOLO[[3]]
 
-- Faster RCNN
+## Reference
+[[1]] Recurrent YOLO for object tracking
+
+[[2]] Github: Guanghan/ROLO
+
+[[3]] Redmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2015). You Only Look Once: Unified, Real-Time Object Detection. CVPR 2016
+
+
+[1]: http://guanghan.info/projects/ROLO/ "Project page"
+[2]: https://github.com/Guanghan/ROLO
+[3]: https://arxiv.org/abs/1506.02640
