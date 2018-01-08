@@ -7,7 +7,7 @@
 ![](https://img.shields.io/badge/Univ-University_of_Missouri_Columbia-blue.svg?style=flat-square)
 
 ##  Resource
-Project page with source code available [[1]]
+Project page [[1]]
 
 Source code available on github page [[2]]
 
