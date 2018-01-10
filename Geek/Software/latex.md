@@ -12,6 +12,7 @@
 ## Latex resources
  - [Latex Mathematical symbols](https://reu.dimacs.rutgers.edu/Symbols.pdf)
  - [Latex Mathematics: equation numbering, alignment, etc](https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics)
+ - [wikibooks page for latex: loads of info](https://en.wikibooks.org/wiki/LaTeX)
 
 
 ## Tricks
