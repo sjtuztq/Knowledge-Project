@@ -5,6 +5,7 @@
     - [ ] lamp
     - [x] sports wear
     - [ ] book mark (check if I still have some)
+ - [ ] what the hell is vim leader key
  - [ ] set up vimtex according to [this post](https://github.com/lervag/vimtex/issues/204)
     - vimtex documentation
     - workflow
