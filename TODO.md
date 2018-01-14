@@ -1,10 +1,8 @@
 # TODO list one page
 
 ## Daily TODO (update everyday)
- - [ ] buy
-    - [ ] lamp
-    - [x] sports wear
-    - [ ] book mark (check if I still have some)
+ - [x] tmux switch panes
+    - `prefix + {/}`
  - [ ] what the hell is vim leader key
  - [ ] set up vimtex according to [this post](https://github.com/lervag/vimtex/issues/204)
     - vimtex documentation
@@ -13,9 +11,7 @@
     - [x] chapter 1
     - [x] chapter 2
     - [ ] chapter 3
-    - [x] 整理
- - [x] tmux switch panes
-    - `prefix + {/}`
+    - [ ] 整理
  - [ ] vim实用指南
  - [ ] read code for vimtex
  - [ ] jekyll hierarchical pages? 
