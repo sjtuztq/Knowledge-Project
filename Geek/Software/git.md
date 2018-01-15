@@ -26,7 +26,8 @@
 
 1. Show different branches
     ```bash
-    git log --graph --oneline```
+    git log --graph --oneline
+    ```
 
 ### View diff
  1. diff between working dir and staging area:
