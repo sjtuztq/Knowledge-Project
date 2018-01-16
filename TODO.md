@@ -1,37 +1,50 @@
 # TODO list one page
 
+## Feynman Everyday
+ - [x] Inbox
+ - [x] Feynman
 
 ## Daily TODO (update everyday)
+### Scheduled
+ - [ ] how to apply feynman to note taking
+ - [ ] _Tensorflow_ book
+    - [x] chapter 3
+    - [ ] chapter 4
+        - [x] autoencoder
+        - [ ] Multi-Layer Perceptron
+    - [ ] organize reading note
+ - [ ] vim practical technique
+    - [ ] chapter x
+ - [ ] fenda course day 3
+ - [ ] gym
+    - [ ] Jan 17
+### Come out of nowhere
+ - [x] china mail http://yjsb.cnpex.com.cn
+ - [ ] find a suitable keep course
+ - [ ] a sticker of Feynman Technique
+ - [ ] add entries for other inboxes
+ - [ ] need a place to organize tmp files
  - [ ] tmux config
     - [ ] move hostname to left
     - select one
         - [ ] change time format(remove second) 
         - [ ] or change update frequency
- - [ ] YCM config
-    - how to eliminate doc box
  - [ ] commit message guidelines(reference) [link](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
- - [ ] [how to use git and github](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
-    - [x] course 1
-    - [x] course 2
-    - [x] course 3
-    - [ ] course 4
- - [ ] _Tensorflow_ book
-    - [x] chapter 3
-    - [ ] chapter 4
-    - [x] organize reading note
  - [ ] online vs offline?
  - [ ] read code for vimtex
  - [ ] jekyll hierarchical pages? 
     - https://stackoverflow.com/questions/38700154/hierarchical-categories-in-github-pages
     - https://gist.github.com/brandonmwest/3536551
     - https://www.google.nl/search?client=safari&rls=en&q=jekyll+hierarchical&ie=UTF-8&oe=UTF-8&gfe_rd=cr&dcr=0&ei=kdpYWriyManc8AfX34voBA
- - [x] organize yh qa
- - [x] what the hell is vim leader key
- - [x] set up vimtex according to [this post](https://github.com/lervag/vimtex/issues/204)
-    - vimtex documentation
-    - workflow
+ - [ ] python autoformat[low priority]
+ - [x] setup mi lamp during rest
  - [x] tmux switch panes
     - `prefix + {/}`
+## Inbox
+ - [ ] zhihu collection
+    - [ ] 5 entries jan 16
+ - [ ] taobao cart
+
 ## Long Term (copy entries to daily TODO)
 ### Knowledge project
  - [ ] auto test?
@@ -58,8 +71,16 @@
     - [x] chapter 2
     - [ ] chapter 3
 ### Abilities
+ - [ ] fenda course: Knowledge management
+    - [x] day 1: Jan 15
+    - [x] day 2: Jan 16
+    - [ ] day 3: Jan 17
+    - [ ] day 4: Jan 18
+    - [ ] day 5: Jan 19
+    - [ ] day 6: Jan 20
+    - [ ] day 7: Jan 21
  - [ ] Explore [UDACITY](https://cn.udacity.com)
-     - [ ] [how to use git and github](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+     - [x] [how to use git and github](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
  - [ ] Communication skills
     - [ ] [How to ask quesitions in a smart way](http://www.catb.org/esr/faqs/smart-questions.html)
     - [ ] [How to be amazingly good at asking questions](http://www.lifehack.org/articles/communication/how-amazingly-good-asking-questions.html)
