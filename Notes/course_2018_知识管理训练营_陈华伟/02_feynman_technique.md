@@ -9,6 +9,7 @@
         - breaking it into very simple points
         - break hard points into even simpler points
  - Final target:
+    - 说人话，打比方
     - Break a hard concept into simple, organized structure
     - Create analogies
 
