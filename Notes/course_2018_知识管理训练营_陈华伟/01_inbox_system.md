@@ -1,8 +1,10 @@
 # Inbox System
 
 ## Feynman inbox
- - Mailbox
+ - Inbox is like a Mailbox
     - **Quality control**: choose what infomation to put into the mailbox
+    - **Tracking source**
+        - Choose what you eat -> choose what you read
     - Deal with infomation 'asynchronously' and more efficiently
         - You don't need to check the mailbox constantly
         - Check it periodically
@@ -29,7 +31,7 @@
     - Read a lot, but you don't really get everything
 
 ## Infomation is food for the brain
- - [ ] Sort out infomation source(using a mind map), know what is fed into the brain.
+ - Sort out infomation source(using a mind map), know what is fed into the brain.
  - We should select what we eat.
  - Same for infomation.
 
